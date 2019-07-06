@@ -14,11 +14,6 @@ def chat():
     user_message = request.POST.get('msg')
     return json.dumps(boto_message(user_message))
 
-# @route('https://api.chucknorris.io/jokes/random', method='GET')
-# def get_joke():
-#     new_joke = request.GET.get('value')
-#     return str(new_joke)
-
 @route("/test", method='POST')
 def chat():
     user_message = request.POST.get('msg')
